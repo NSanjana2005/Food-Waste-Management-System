@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Page Container */
+.contact-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form & Info Layout */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.contact-form h3, .contact-info h3 {
+    text-align: center;
+    color: #06C167;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #06C167;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #048b54;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.contact-info i {
+    color: #06C167;
+    margin-right: 8px;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: rgba(151, 243, 199, 0.5);
+    padding: 30px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background: #06C167;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.accordion:hover {
+    background: #048b54;
+}
+
+.panel {
+    padding: 15px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-radius: 4px;
+}

@@ -1,0 +1,206 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+  --navcolor: #1b1b1b;
+  --navfont: #ffffff;
+  --primary-color: #ff4500;
+  --secondary-color: #ffcc00;
+  --hover-primary: #e63900;
+  --box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  --footer-bg: #101010;
+  --content-bg: #282828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navigation Bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: var(--navcolor);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-bar ul li a {
+  padding: 14px 24px;
+  font-size: 18px;
+  transition: 0.3s;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--navfont);
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/donetfood.png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.banner a {
+  background: var(--secondary-color);
+  padding: 16px 34px;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: #333;
+}
+
+.banner a:hover {
+  background: var(--hover-primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+  padding: 60px;
+  background: var(--content-bg);
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 40px auto;
+  width: 90%;
+}
+
+/* Image Gallery */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+
+.box {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+/* Door Pickup */
+.deli {
+  text-align: center;
+  padding: 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  width: 80%;
+  margin: 40px auto;
+}
+
+.deli p {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  background: var(--footer-bg);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  flex: 1;
+  text-align: center;
+  margin: 15px;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--hover-primary);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+  }
+  .nav-bar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--navcolor);
+    display: none;
+  }
+  .nav-bar.active ul {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
