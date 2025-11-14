@@ -71,8 +71,8 @@ This system helps reduce food waste while ensuring that surplus food reaches tho
 
 1. **Download or Clone the Repository**
    ```bash
-   git clone https://github.com/Sounhard/Food-Waste-Management-System.git
-   
+   git clone https://github.com/NSanjana2005/Food-Waste-Management-System.git
+  
 2. **Move the folder to your XAMPP htdocs directory
       C:\xampp\htdocs\Food-Waste-Management-System
 
