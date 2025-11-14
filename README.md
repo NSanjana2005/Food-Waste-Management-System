@@ -114,6 +114,6 @@ This system helps reduce food waste while ensuring that surplus food reaches tho
 
 👨‍💻 Developed By
 
-🧑‍💼Sounhard Powar
+  Sanjana Nitnware
 🎓 B.Tech in Computer Science & Engineering
 
